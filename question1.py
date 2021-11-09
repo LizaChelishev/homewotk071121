@@ -22,6 +22,10 @@ def create_book(title, author, genre, year_of_publish, no_of_pages):
     new_book.author = author
     new_book.year_of_publish = year_of_publish
     new_book.genre = genre
+    new_book.no_of_pages = no_of_pages
     return new_book
 
-list_of_books =[Harry_Potter, Winnie_the_Pooh, ]
+list_of_books =[Harry_Potter, Winnie_the_Pooh]
+
+books_dictionary = dict(zip(list_of_books))
+print(books_dictionary)
