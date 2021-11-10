@@ -25,7 +25,11 @@ def create_book(title, author, genre, year_of_publish, no_of_pages):
     new_book.no_of_pages = no_of_pages
     return new_book
 
+print(create_book('newbook', 'liza', 'fantasy', 2021, 105).__dict__)
+
+
 list_of_books =[Harry_Potter, Winnie_the_Pooh]
 
-books_dictionary = dict(zip(list_of_books))
-print(books_dictionary)
+books_dictionary = {
+    'Harry Potter' : Harry_Potter,
+    "Winnie-the-Pooh": Winnie_the_Pooh}
