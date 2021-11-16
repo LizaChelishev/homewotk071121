@@ -1,7 +1,6 @@
 class Book:
     pass
 
-
 Harry_Potter = Book()
 Harry_Potter.title = 'Harry Potter'
 Harry_Potter.author = 'J. K. Rowling'
@@ -16,6 +15,13 @@ Winnie_the_Pooh.__dict__['genre'] = 'Children\'s literature'
 Winnie_the_Pooh.__dict__['year_of_publish'] = 1926
 Winnie_the_Pooh.__dict__['no_of_pages'] = 200
 
+Narnia = Book()
+Narnia.title = 'Narnia'
+Narnia.author = 'C. S. Lewis'
+Narnia.genre = 'Fantasy'
+Narnia.year_of_publish = 1950
+Narnia.no_of_pages = 623
+
 def create_book(title, author, genre, year_of_publish, no_of_pages):
     new_book = Book()
     new_book.title = title
@@ -28,8 +34,7 @@ def create_book(title, author, genre, year_of_publish, no_of_pages):
 print(create_book('newbook', 'liza', 'fantasy', 2021, 105).__dict__)
 
 
-list_of_books =[Harry_Potter, Winnie_the_Pooh]
+list_of_books =[Harry_Potter, Winnie_the_Pooh, Narnia]
 
-books_dictionary = {
-    'Harry Potter' : Harry_Potter,
-    "Winnie-the-Pooh": Winnie_the_Pooh}
+books_dictionary = {}
+books_dictionary[Book.]
